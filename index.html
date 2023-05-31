@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <link rel="icon" href="imagenes\faviconei.png">
+    <title>Encript.it! </title>
+</head>
+<body>
+    
+    <header>
+        <img class="logo" src="imagenes\faviconei.png" alt="logo de encript.it!">
+    </header>
+    <div class="contenido">
+        <div id="content">
+            <textarea class="textArea" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <div>
+                <h6 class="informacion">Sólo letras minúsculas y sin acentos.</h6>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>                
+            </div>
+        </div>
+        <!--resultado-->
+        <div id="result">
+            <textarea class="mensaje" cols="20" rows="10" placeholder="No hay mensajes encriptados"></textarea>
+            <button class="btn-copiar" onclick="btnCopiar()">Copiar</button> 
+        </div>
+        
+    </div>   
+</body>
+</html>
